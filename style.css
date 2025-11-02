@@ -63,8 +63,7 @@ body.ready .header{animation:slideIn .8s ease forwards .1s}
 
 /* ==== PAGE 1 ==== */
 .page1{position:relative;display:flex;align-items:center;justify-content:center;height:100vh;background:none;color:#e7f2ec;overflow:hidden;text-align:left}
-.page1::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 30%,rgba(41,199,112,.05) 0,transparent 60%),linear-gradient(to bottom,rgba(11,15,13,.6),rgba(11,15,13,.25) 55%,rgba(11,15,13,.7));mix-blend-mode:soft-light;backdrop-filter:blur(1.5px);pointer-events:none}
-.page1::after{content:"";position:absolute;inset:0;background:url("img/noise.png");opacity:.03;mix-blend-mode:overlay;pointer-events:none}
+
 .page1-text{display:flex;flex-direction:column;width:100%;max-width:1400px;padding:40px;position:relative;cursor:default}
 
 /* Типографика */
@@ -98,3 +97,12 @@ body.ready .button1{animation:rise .8s ease .8s both}
   .button1{margin-top:1.2rem}
   .button1 button{padding:10px 28px;font-size:.95rem}
 }
+/* KILL-SWITCH: Отключить любой туман/оверлей, где бы он ни был */
+body::before,body::after,
+.webback::before,.webback::after,
+.page1::before,.page1::after,
+section::before,section::after,
+*[style*="mix-blend-mode"]{
+  display:none!important; background:none!important; opacity:0!important;
+}
+*{filter:none!important; backdrop-filter:none!important; mix-blend-mode:normal!important;}
