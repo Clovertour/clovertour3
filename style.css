@@ -63,7 +63,6 @@ body.ready .header{animation:slideIn .8s ease forwards .1s}
 
 /* ==== PAGE 1 ==== */
 .page1{position:relative;display:flex;align-items:center;justify-content:center;height:100vh;background:none;color:#e7f2ec;overflow:hidden;text-align:left}
-
 .page1-text{display:flex;flex-direction:column;width:100%;max-width:1400px;padding:40px;position:relative;cursor:default}
 
 /* Типографика */
