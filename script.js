@@ -276,10 +276,12 @@ document.getElementById("form")?.addEventListener("submit", async (e) => {
       msg
     });
 
-    status.textContent = "Message sent!";
+    status.textContent = "";
+    showToast("Message sent!", "success");
     e.target.reset();
   } catch (err) {
-    status.textContent = "Error sending message";
+    status.textContent = "";
+    showToast("Error sending message", "error");
   }
 });
 // === BOOKING FORM (modal) ===
@@ -329,13 +331,29 @@ document.addEventListener("DOMContentLoaded", () => {
                 time
             });
 
-            alert("Booking request sent!");
+            showToast("Booking request sent!", "success");
             form.reset();
             modal.classList.remove("active");
 
         } catch (err) {
             console.error(err);
-            alert("Error sending booking request");
+            showToast("Error sending booking request", "error");
         }
     });
 });
+
+function showToast(message, type = "success") {
+  const container = document.getElementById("toastContainer");
+  if (!container) return;
+
+  const toast = document.createElement("div");
+  toast.className = `toast ${type}`;
+
+  const icon = type === "success" ? "✅" : "‼️";
+
+  toast.innerHTML = `<span class="icon">${icon}</span> ${message}`;
+
+  container.appendChild(toast);
+
+  setTimeout(() => toast.remove(), 5000);
+}
