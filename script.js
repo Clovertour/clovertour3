@@ -127,6 +127,17 @@ const i18n = {
     btn_book: "Book",
     modal_booking_default: "Booking",
     modal_booking_prefix: "Booking: ",
+    //ABOUT
+    about_mini: "ABOUT US",
+    about_big_1: "Discover",
+    about_big_2: "Ireland",
+    about_big_3: "Differently",
+    about_hero_desc: "Olgatour was created to redefine how people experience Ireland — deeper, calmer and more meaningful.",
+    about_tag1: "#Eco Routes",
+    about_tag2: "#Local Life",
+    about_tag3: "#Hidden Spots",
+    about_tag4: "#Calm Travel",
+
 
     /* TAGS (added) */
     tag_3nights: "3 nights tour",
@@ -234,6 +245,16 @@ const i18n = {
     btn_book: "Забронировать",
     modal_booking_default: "Бронирование",
     modal_booking_prefix: "Бронирование: ",
+    //ABOUT
+    about_mini: "О НАС",
+    about_big_1: "Откройте",
+    about_big_2: "Ирландию",
+    about_big_3: "По-новому",
+    about_hero_desc: "Olgatour создан, чтобы переосмыслить впечатления от Ирландии — глубже, спокойнее и осознаннее.",
+    about_tag1: "#Эко Маршруты",
+    about_tag2: "#Местная Жизнь",
+    about_tag3: "#Скрытые Места",
+    about_tag4: "#Спокойные Путешествия",
 
     /* TAGS */
     tag_3nights: "Тур на 3 ночи",

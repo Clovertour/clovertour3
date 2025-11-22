@@ -147,39 +147,47 @@
             </div>
         </div>
     </section>
-    
-    <!--ABOUT-->
+
+    <!-- ABOUT -->
     <section id="about" class="about-hero-section fade-item">
         <div class="wrapper">
 
             <div class="about-hero-split">
 
                 <div class="about-left">
-                    <p class="mini">ABOUT US</p>
+                    <p class="mini" data-i18n="about_mini">ABOUT US</p>
+
                     <h2 class="big-title">
-                        Discover<br><span>Ireland</span><br>Differently
+                        <span data-i18n="about_big_1" class="white">Discover</span><br>
+                        <span data-i18n="about_big_2" class="green">Ireland</span><br>
+                        <span data-i18n="about_big_3" class="white">Differently</span>
                     </h2>
-                    <p class="hero-desc">
+
+                    <p class="hero-desc" data-i18n="about_hero_desc">
                         Olgatour was created to redefine how people experience Ireland —
                         deeper, calmer and more meaningful.
                     </p>
+
+                    <div class="mini-row">
+                        <div class="mini-feature" data-i18n="about_tag1">#Eco Routes</div>
+                        <div class="mini-feature" data-i18n="about_tag2">#Local Life</div>
+                        <div class="mini-feature" data-i18n="about_tag3">#Hidden Spots</div>
+                        <div class="mini-feature" data-i18n="about_tag4">#Calm Travel</div>
+                    </div>
                 </div>
 
                 <div class="about-right">
-                    <img src="img/back/forest.jpg" alt="">
+                    <div class="about-img-wrap">
+                        <img src="img/back/cliffs.jpg" alt="">
+                        <div class="img-gradient"></div>
+                    </div>
                 </div>
 
-            </div>
-
-            <div class="mini-row">
-                <div class="mini-feature">#Eco Routes</div>
-                <div class="mini-feature">#Local Life</div>
-                <div class="mini-feature">#Hidden Spots</div>
-                <div class="mini-feature">#Calm Travel</div>
             </div>
 
         </div>
     </section>
+
 
     <!-- CONTACTS -->
     <section id="contacts" class="contacts-section fade-item">
@@ -206,13 +214,26 @@
                         <span id="formStatus" class="muted" aria-live="polite"></span>
                     </div>
                 </form>
-
+                <!--ASIDE-->
                 <aside class="item contacts-info">
                     <h3 data-i18n="contact_info_title">FIND US HERE</h3>
                     <p class="muted">
-                        <a href="mailto:clovertourhelp@gmail.com">clovertourhelp@gmail.com</a><br>
-                        +353 000 000 000<br>
-                        <span data-i18n="contact_hours">Mon–Fri, 10:00–18:00 (IST)</span>
+                        <!-- Gmail -->
+                        <a href="mailto:clovertourhelp@gmail.com"
+                            style="display:flex;align-items:center;gap:8px;margin:6px 0;">
+                            <img src="img/gmail.svg" alt="Gmail"
+                                style="width:20px;height:20px;opacity:.95;filter:drop-shadow(0 0 8px rgba(41,199,112,.35));">
+                            clovertourhelp@gmail.com
+                        </a>
+                        <!-- Telegram -->
+                        <a href="https://t.me/Olgairishtour" target="_blank"
+                            style="display:flex;align-items:center;gap:8px;margin:6px 0;">
+                            <img src="img/telegram.svg" alt="Telegram"
+                                style="width:20px;height:20px;opacity:.95;filter:drop-shadow(0 0 8px rgba(41,199,112,.35));">
+                            @Olgairishtour
+                        </a>
+
+                        <span data-i18n="contact_hours">Mon–Fri, 10:00–18:00 (GMT)</span>
                     </p>
                 </aside>
 
