@@ -157,8 +157,14 @@ const i18n = {
     /* PROMO (added) */
     promo_special_offer: "SPECIAL OFFER OF THE MONTH",
     promo_special_tag: "Special offer — 3 nights",
-    promo_marquee: "Sale of the month — 20% OFF — Limited Offer — ",
+    promo_marquee: "- Special offer — Killarney — Limited Offer — ",
     promo_killarney_desc:"Killarney County Kerry. At the beginning of our journey you will hear the secrets and legends of the Shannon River Bay.We will visit an incredible and mysterious place – Ross Castle... The journey will be “seasoned” with real ancient Irish legends.",
+    old_price: "Regular Price",
+    new_price1: "🌿 Price Upon Request",
+    new_price2: "🔍 Personalised Offer",
+    new_price3: "✨ Tailored Experience",
+    new_price4: "🧭 Bespoke Experience",
+
     /* FOOTER */
     price_disclaimer1: "The cost of each tour is discussed individually.",
     price_disclaimer2: "Prices are flexible and depend on the date, group size and preferences!",
@@ -258,8 +264,14 @@ const i18n = {
     /* PROMO */
     promo_special_offer: "СПЕЦПРЕДЛОЖЕНИЕ МЕСЯЦА",
     promo_special_tag: "Спецпредложение — 3 ночи",
-    promo_marquee: "Скидка месяца — 20% — Ограниченное предложение — ",
+    promo_marquee: "- Специальное предложение — Килларни — Ограниченное предложение — ",
     promo_killarney_desc:"Килларни, графство Керри. В начале нашего путешествия вы услышите легенды и истории залива реки Шаннон. Мы посетим удивительное и загадочное место — замок Росс... Путешествие будет приправлено настоящими древними ирландскими легендами.",
+    old_price: "Стандартная цена",
+    new_price1: "🌿 Стоимость по запросу",
+    new_price2: "🔍 Индивидуальное предложение",
+    new_price3: "✨ Персональный опыт",
+    new_price4: "🧭 Эксклюзивный тур",
+
     /* FOOTER */
     price_disclaimer1: "Стоимость каждого тура обсуждается индивидуально.",
     price_disclaimer2: "И зависит от даты, маршрута, размера группы и ваших предпочтений!",

@@ -138,7 +138,7 @@ body .header{opacity:1!important;transform:translate(-50%,0)!important}
 .tour-short{margin:0;color:rgba(231,242,236,.85);font-size:.8rem;line-height:1.5}
 .tour-rating{display:flex;align-items:center;gap:6px}.tour-rating .stars{font-size:.78rem;letter-spacing:1px;color:rgba(41,199,112,.9);text-shadow:0 0 8px rgba(41,199,112,.35)}
 .rating-number{font-size:.65rem;color:rgba(231,242,236,.5)}
-.price-box{display:flex;flex-direction:column}.old-price{margin-bottom: .2rem; font-size:.8rem;color:rgba(231,242,236,.5);text-decoration:line-through}.tour-price{font-size:.9rem;font-weight:700;color:#e7f2ec}
+.price-box{display:flex;flex-direction:column}.old-price{margin-bottom: .2rem; font-size:.65rem;color:rgba(231,242,236,.5);text-decoration:line-through}.tour-price{font-size:.75rem;font-weight:700;color:#e7f2ec}
 .tour-bottom{margin-top:14px;display:flex;justify-content:space-between;align-items:center}
 .book-btn.small{padding:8px 18px;font-size:.8rem;border-radius:24px;border:2px solid rgba(41,199,112,.5);background:rgba(11,15,13,.6);color:#e7f2ec;transition:.25s}.book-btn.small:hover{color:#29c770;border-color:#29c770;transform:translateY(-2px)}
 
