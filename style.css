@@ -12,7 +12,7 @@
 .clover{width:64px;height:64px;position:relative;animation:spin 1.6s linear infinite;background:radial-gradient(closest-side,#29c770 98%,transparent)0 0/50% 50% no-repeat,radial-gradient(closest-side,#29c770 98%,transparent)100% 0/50% 50% no-repeat,radial-gradient(closest-side,#29c770 98%,transparent)0 100%/50% 50% no-repeat,radial-gradient(closest-side,#29c770 98%,transparent)100% 100%/50% 50% no-repeat;border-radius:14px;filter:drop-shadow(0 6px 18px rgba(41,199,112,.35))}.clover i{position:absolute;inset:0;margin:auto;width:18px;height:18px;transform:rotate(45deg);background:#e7f2ec;border-radius:4px;box-shadow:0 0 0 2px #103c2a inset}.clover::after{content:"";position:absolute;inset:-12px;border-radius:16px;mask:radial-gradient(circle at 50% 50%,transparent 34px,#000 34.5px);background:conic-gradient(from 0turn,#36e088 0 25%,#1ea55f 0 50%,#36e088 0 75%,#1ea55f 0 100%);animation:dash 1.2s ease-in-out infinite}@keyframes spin{to{transform:rotate(360deg)}}@keyframes dash{0%{transform:rotate(0)scale(.9);opacity:.6}50%{transform:rotate(90deg)scale(1);opacity:1}100%{transform:rotate(180deg)scale(.9);opacity:.6}}
 
 /* ========================= HEADER ========================= */
-.header{position:fixed;top:20px;left:50%;transform:translate(-50%,-40px);width:clamp(300px,90%,1200px);height:60px;display:flex;align-items:center;justify-content:space-between;padding:10px 40px;background:rgba(11,15,13,.75);backdrop-filter:blur(15px);border:1px solid rgba(41,199,112,.15);border-radius:50px;box-shadow:0 6px 22px rgba(0,0,0,.35);color:#e7f2ec;font-family:"Montserrat",system-ui,sans-serif;font-weight:600;z-index:1000;opacity:0}body.ready .header{animation:slideIn .8s ease forwards .1s}@keyframes slideIn{0%{opacity:0;transform:translate(-50%,-40px)}100%{opacity:1;transform:translate(-50%,0)}}
+.header{position:fixed;top:20px;left:50%;transform:translate(-50%,-40px);width:clamp(300px,90%,1200px);height:60px;display:flex;align-items:center;justify-content:space-between;padding:10px 40px;background:rgba(11,15,13,.75);backdrop-filter:blur(15px);border:1px solid rgba(41,199,112,.15);border-radius:50px;box-shadow:0 6px 22px rgba(0,0,0,.35);color:#e7f2ec;font-family:"Nunito Sans",system-ui,sans-serif;font-weight:600;z-index:1000;opacity:0}body.ready .header{animation:slideIn .8s ease forwards .1s}@keyframes slideIn{0%{opacity:0;transform:translate(-50%,-40px)}100%{opacity:1;transform:translate(-50%,0)}}
 .logo{color:#29c770;font-size:1.2rem;font-weight:700;letter-spacing:.5px;text-decoration:none;transition:opacity .3s}.logo:hover{opacity:.8}
 .menu{display:flex;align-items:center;gap:24px}.menu a{color:#e7f2ec;font-size:.95rem;text-decoration:none;transition:color .3s}.menu a:hover{color:#29c770}
 .language{position:relative;display:flex;align-items:center;justify-content:center;width:72px;height:32px;background:rgba(255,255,255,.05);border:1px solid rgba(41,199,112,.25);border-radius:20px;cursor:pointer;transition:.3s}.language::before{content:attr(data-lang);color:#e7f2ec;font-size:.9rem;font-weight:600;letter-spacing:.3px}.language:hover{border-color:#29c770;background:rgba(41,199,112,.1)}
@@ -21,17 +21,17 @@
 /* ========================= PAGE 1 HERO ========================= */
 .page1{position:relative;display:flex;align-items:center;justify-content:center;height:100vh;background:none;color:#e7f2ec;overflow:hidden;text-align:left;margin-bottom:0}
 .page1-text{display:flex;flex-direction:column;width:100%;max-width:1400px;padding:40px;position:relative;cursor:default}
-.text1{font:700 clamp(2.5rem,7vw,7rem) "Inika",sans-serif;line-height:.9;color:#29c770;text-shadow:0 0 10px rgba(41,199,112,.25),0 0 40px rgba(41,199,112,.15)}
-.text2{font:800 clamp(2rem,10vw,12rem) "Inika",sans-serif;color:rgba(255,255,255,.08);-webkit-text-stroke:2px rgba(255,255,255,.8);letter-spacing:4px}
-.text3{font:400 italic clamp(1rem,1.2vw,1.4rem) "Inika",serif;max-width:600px;line-height:1.7;animation:colorBreath 4s ease-in-out 1.4s infinite}
-.button1{margin-top:2rem}.button1 button{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 36px;background:rgba(11,15,13,.6);border:2px solid rgba(41,199,112,.5);border-radius:50px;color:#e7f2ec;font:600 1rem "Montserrat";letter-spacing:.5px;cursor:pointer;backdrop-filter:blur(15px);box-shadow:0 6px 22px rgba(0,0,0,.35);transition:all .3s}.button1 button:hover{border-color:#29c770;color:#29c770;transform:translateY(-2px)}
+.text1{max-width:95%; word-break:break-word; font:700 clamp(2rem,6vw,6rem) "Prata",sans-serif;line-height:.9;color:#29c770;text-shadow:0 0 10px rgba(41,199,112,.25),0 0 40px rgba(41,199,112,.15)}
+.text2{font:800 clamp(2rem,10vw,12rem) "Inika",sans-serif;color:rgba(255,255,255,.08);-webkit-text-stroke:3px rgba(255,255,255,.8);letter-spacing:4px}
+.text3{font:400 italic clamp(1rem,1.2vw,1.4rem) "Prata",serif;max-width:600px;line-height:1.7;animation:colorBreath 4s ease-in-out 1.4s infinite}
+.button1{margin-top:2rem}.button1 button{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 36px;background:rgba(11,15,13,.6);border:2px solid rgba(41,199,112,.5);border-radius:50px;color:#e7f2ec;font:600 1rem "Nunito Sans";letter-spacing:.5px;cursor:pointer;backdrop-filter:blur(15px);box-shadow:0 6px 22px rgba(0,0,0,.35);transition:all .3s}.button1 button:hover{border-color:#29c770;color:#29c770;transform:translateY(-2px)}
 @keyframes colorBreath{0%,100%{color:#e7f2ec}50%{color:#29c770}}@keyframes rise{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
 body.ready .text1{animation:rise .9s cubic-bezier(.25,.1,.25,1) .15s both}body.ready .text2{animation:rise 1s cubic-bezier(.25,.1,.25,1) .35s both}body.ready .text3{animation:rise 1s cubic-bezier(.25,.1,.25,1) .55s both,colorBreath 4s ease-in-out 1.4s infinite}body.ready .button1{animation:rise .8s ease .8s both}
 
 /* ========================= TOURS PREVIEW ========================= */
-.tours-preview{margin-top:0;position:relative;padding:10px 40px;background:none;color:#e7f2ec;font-family:"Montserrat",system-ui,sans-serif;overflow:hidden}
+.tours-preview{margin-top:0;position:relative;padding:10px 40px;background:none;color:#e7f2ec;font-family:"Nunito Sans",system-ui,sans-serif;overflow:hidden}
 .tours-inner{max-width:1400px;margin:0 auto}
-.tours-title{font:700 clamp(2.2rem,5vw,3rem) "Inika",serif;color:#29c770;margin-bottom:15px;text-shadow:0 0 10px rgba(41,199,112,.25)}
+.tours-title{font:700 clamp(2.2rem,5vw,3rem) "Prata",serif;color:#29c770;margin-bottom:15px;text-shadow:0 0 10px rgba(41,199,112,.25)}
 .tours-layout{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:stretch}
 .side-tours{display:flex;flex-direction:column;gap:40px}
 
@@ -39,19 +39,19 @@ body.ready .text1{animation:rise .9s cubic-bezier(.25,.1,.25,1) .15s both}body.r
 .tour-card:hover{transform:translateY(-6px);border-color:rgba(41,199,112,.4)}
 .tour-card img{width:100%;height:100%;object-fit:cover;filter:brightness(.85);transition:filter .4s ease}.tour-card:hover img{filter:brightness(1)}
 .tour-card .info{padding:20px 24px 28px}
-.tour-card h3{color:#29c770;font-family:"Inika",serif;font-weight:700;font-size:1.2rem;margin:0 0 8px}
+.tour-card h3{color:#29c770;font-family:"Prata",serif;font-weight:700;font-size:1.2rem;margin:0 0 8px}
 .tour-card p{color:rgba(231,242,236,.85);font-size:.8rem;line-height:1.5}
 
 .tour-card.big{display:flex;flex-direction:column;overflow:hidden;border-radius:16px;background:rgba(11,15,13,.85);box-shadow:0 8px 24px rgba(0,0,0,.2)}
 .tour-card.big img{width:100%;height:400px;object-fit:cover;filter:brightness(.85);transition:filter .4s ease}
 .tour-card.big:hover img{filter:brightness(1)}
 .tour-card.big .info{padding:24px 32px;animation:fadeUp .6s ease both}
-.tour-card.big h3{color:#29c770;font-family:"Inika";font-weight:700;font-size:1.2rem;margin-bottom:10px}
+.tour-card.big h3{color:#29c770;font-family:"Prata";font-weight:700;font-size:1.2rem;margin-bottom:10px}
 .tour-card.big .desc{font-size:.8rem;line-height:1.6;color:rgba(231,242,236,.9);max-width:600px;margin-bottom:20px}
 
 .book-btn,.more-btn{display:inline-flex;align-items:center;justify-content:center;background:rgba(11,15,13,.6);border:2px solid rgba(41,199,112,.5);color:#e7f2ec;text-decoration:none;transition:all .3s ease;backdrop-filter:blur(15px);box-shadow:0 6px 22px rgba(0,0,0,.35)}
-.book-btn{padding:10px 28px;border-radius:30px;font:600 .95rem "Montserrat"}
-.more-btn{padding:12px 36px;border-radius:40px;font:600 1rem "Montserrat"}
+.book-btn{padding:10px 28px;border-radius:30px;font:600 .95rem "Nunito Sans"}
+.more-btn{padding:12px 36px;border-radius:40px;font:600 1rem "Nunito Sans"}
 .book-btn:hover,.more-btn:hover{color:#29c770;border-color:#29c770;transform:translateY(-2px)}
 
 .more-tours{text-align:center;margin:30px 0}
@@ -59,54 +59,41 @@ body.ready .text1{animation:rise .9s cubic-bezier(.25,.1,.25,1) .15s both}body.r
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 
 /* ========================= WHY OLGATOURS ========================= */
-.why-section{position:relative;padding:80px 40px;background:none;color:#e7f2ec;font-family:"Montserrat",system-ui,sans-serif}
+.why-section{position:relative;padding:80px 40px;background:none;color:#e7f2ec;font-family:"Nunito Sans",system-ui,sans-serif}
 .why-inner{max-width:1200px;margin:0 auto;text-align:center}
-.why-title{font:700 clamp(2.2rem,5vw,3rem) "Inika";color:#29c770;margin-bottom:50px;text-shadow:0 0 10px rgba(41,199,112,.25);text-align:left}
+.why-title{font:700 clamp(2.2rem,5vw,3rem) "Prata";color:#29c770;margin-bottom:50px;text-shadow:0 0 10px rgba(41,199,112,.25);text-align:left}
 .why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:40px}
 .why-card{background:rgba(11,15,13,.5);border:2px solid rgba(41,199,112,.15);border-radius:20px;padding:30px;backdrop-filter:blur(8px);box-shadow:0 0 15px rgba(0,0,0,.25);transition:.3s}
 .why-card:hover{background:rgba(11,15,13,.75);transform:translateY(-6px);border-color:rgba(41,199,112,.4);box-shadow:0 0 25px rgba(41,199,112,.15)}
-.why-card h3{font:600 1.3rem "Montserrat";color:#29c770;margin-bottom:10px}
+.why-card h3{font:600 1.3rem "Nunito Sans";color:#29c770;margin-bottom:10px}
 .why-card p{color:#cdd8d3;font-size:.95rem;line-height:1.6}
 
 /* ========================= ABOUT HERO ========================= */
-.about-hero-section{padding:130px 40px 110px;color:#e7f2ec;font-family:"Montserrat",system-ui,sans-serif;display:flex;justify-content:center;position:relative}
+.about-hero-section{padding:130px 40px 110px;color:#e7f2ec;font-family:"Nunito Sans",system-ui,sans-serif;display:flex;justify-content:center;position:relative}
 .about-hero-section::before{content:"";position:absolute;top:-200px;left:50%;transform:translateX(-50%);width:900px;height:900px;background:radial-gradient(circle,rgba(41,199,112,.12) 0%,rgba(0,0,0,0) 70%);pointer-events:none;z-index:0}
 .about-hero-section .wrapper{width:100%;max-width:1450px;margin:auto;position:relative;z-index:2}
 /* GRID */
 .about-hero-split{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:80px}
 /* LEFT SIDE */
 .about-left{padding-right:20px}
-.about-left .mini{font:700 clamp(1.4rem,2.8vw,2.2rem) "Inika";letter-spacing:7px;color:#29c770;margin-bottom:30px;text-shadow:0 0 22px rgba(41,199,112,.45)}
-.big-title{font:700 clamp(3rem,6vw,5.2rem) "Inika",serif;line-height:1.04;margin-bottom:35px;color:#e7f2ec}
+.about-left .mini{font:700 clamp(1.4rem,2.8vw,2.2rem) "Prata";letter-spacing:7px;color:#29c770;margin-bottom:30px;text-shadow:0 0 22px rgba(41,199,112,.45)}
+.big-title{font:700 clamp(3rem,6vw,5.2rem) "Prata",serif;line-height:1.04;margin-bottom:35px;color:#e7f2ec}
 .big-title .white{color:#e7f2ec}
 .big-title .green{color:#29c770;text-shadow:0 0 35px rgba(41,199,112,.45)}
 .hero-desc{font-size:1.25rem;line-height:1.75;opacity:.92;max-width:580px;margin-bottom:50px}
 /* RIGHT SIDE */
 .about-right{position:relative}
-.about-img-wrap{
-    overflow:hidden;
-    border-radius:34px;
-    height:520px;
-    position:relative;
-    box-shadow:0 25px 55px rgba(0,0,0,.45);
-    transform:scale(1.02);
-}
-
-.about-img-wrap img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transform:scale(1.06);
-}
+.about-img-wrap{overflow:hidden;border-radius:34px;height:520px;position:relative;box-shadow:0 25px 55px rgba(0,0,0,.45);transform:scale(1.02);}
+.about-img-wrap img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);}
 
 /* MINI FEATURES */
 .mini-row{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
 .mini-feature{text-align:center;font-weight:600;font-size:1.08rem;padding:18px 20px;background:rgba(11,15,13,.65);border:1px solid rgba(41,199,112,.22);border-radius:18px;backdrop-filter:blur(14px);transition:.3s;color:#29c770;letter-spacing:.6px;box-shadow:0 6px 18px rgba(41,199,112,.15)}
 .mini-feature:hover{transform:translateY(-5px);border-color:#29c770;box-shadow:0 14px 38px rgba(41,199,112,.4)}
 /* ========================= CONTACTS ========================= */
-.contacts-section{font-size:1.2rem;color:#29c770;font-family:"Montserrat",system-ui,sans-serif;background:none;padding:80px 0;display:flex;justify-content:center}
+.contacts-section{font-size:1.2rem;color:#29c770;font-family:"Nunito Sans",system-ui,sans-serif;background:none;padding:80px 0;display:flex;justify-content:center}
 .contacts-inner{width:100%;max-width:1200px;padding:0 40px;margin:auto}
-.contacts-title{font:700 clamp(2.2rem,5vw,3rem) "Inika";color:#29c770!important;margin-bottom:40px;text-shadow:0 0 10px rgba(41,199,112,.25);position:relative;text-decoration:none!important}
+.contacts-title{font:700 clamp(2.2rem,5vw,3rem) "Prata";color:#29c770!important;margin-bottom:40px;text-shadow:0 0 10px rgba(41,199,112,.25);position:relative;text-decoration:none!important}
 .contacts-title::after{content:"";position:absolute;left:0;bottom:-10px;width:90px;height:3px;background:#29c770;border-radius:10px;opacity:.7}
 .contacts-grid{display:grid;grid-template-columns:7fr 5fr;gap:24px;margin-top:40px}
 .contacts-form,.contacts-info{background:rgba(11,15,13,.50);border:1px solid rgba(41,199,112,.15);padding:20px;border-radius:16px;backdrop-filter:blur(12px);box-shadow:0 6px 20px rgba(0,0,0,.30)}
@@ -118,11 +105,11 @@ body.ready .text1{animation:rise .9s cubic-bezier(.25,.1,.25,1) .15s both}body.r
 .contacts-actions{display:flex;gap:12px;margin-top:10px}
 .contacts-actions .btn{padding:10px 24px;border-radius:40px;border:2px solid rgba(41,199,112,.4);background:rgba(11,15,13,.6);color:#e7f2ec;font-weight:600;letter-spacing:.3px;transition:.3s}
 .contacts-actions .btn:hover{border-color:#29c770;color:#29c770;transform:translateY(-2px)}
-.contacts-info h3{margin:0 0 12px!important;font:600 1.25rem "Montserrat"!important;color:#29c770!important}
+.contacts-info h3{margin:0 0 12px!important;font:600 1.25rem "Nunito Sans"!important;color:#29c770!important}
 .contacts-info p{color:#cdd8d3;font-size:.95rem;line-height:1.55}
 
 /* ========================= FOOTER ========================= */
-.footer{margin-top:80px;padding:50px 20px;background:rgba(11,15,13,.75);border-top:1px solid rgba(41,199,112,.2);backdrop-filter:blur(15px);font-family:"Montserrat",system-ui,sans-serif}
+.footer{margin-top:80px;padding:50px 20px;background:rgba(11,15,13,.75);border-top:1px solid rgba(41,199,112,.2);backdrop-filter:blur(15px);font-family:"Nunito Sans",system-ui,sans-serif}
 .footer-inner{max-width:1200px;margin:auto;text-align:center}
 .footer-logo{color:#29c770;font-size:1.3rem;font-weight:700;text-decoration:none}
 .footer-menu{margin:15px 0 20px;display:flex;justify-content:center;gap:24px}
@@ -131,15 +118,15 @@ body.ready .text1{animation:rise .9s cubic-bezier(.25,.1,.25,1) .15s both}body.r
 
 /* ========================= TOURS PAGE ========================= */
 body .header{opacity:1!important;transform:translate(-50%,0)!important}
-.tours-page{padding:140px 40px 60px;color:#e7f2ec;font-family:"Montserrat",system-ui,sans-serif}
+.tours-page{padding:140px 40px 60px;color:#e7f2ec;font-family:"Nunito Sans",system-ui,sans-serif}
 .tours-inner{max-width:1400px;margin:0 auto}
-.tours-title{text-align:center;font:700 3rem "Inika",serif;color:#29c770;margin-bottom:30px;text-shadow:0 0 10px rgba(41,199,112,.25)}
+.tours-title{text-align:center;font:700 3rem "Prata",serif;color:#29c770;margin-bottom:30px;text-shadow:0 0 10px rgba(41,199,112,.25)}
 .tours-list{display:flex;flex-direction:column;gap:30px}
 .tours-grid{margin-top:40px;display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
 
 /* ========================= MODAL + TOAST ========================= */
 .modal{position:fixed;inset:0;display:none;justify-content:center;align-items:center;background:rgba(0,0,0,.55);backdrop-filter:blur(6px);z-index:9999}.modal.active{display:flex}
-.modal-content{background:rgba(11,15,13,.9);border:1px solid rgba(41,199,112,.25);padding:30px;width:380px;border-radius:22px;font-family:"Montserrat",system-ui,sans-serif;color:#e7f2ec;position:relative;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.modal-content{background:rgba(11,15,13,.9);border:1px solid rgba(41,199,112,.25);padding:30px;width:380px;border-radius:22px;font-family:"Nunito Sans",system-ui,sans-serif;color:#e7f2ec;position:relative;box-shadow:0 8px 24px rgba(0,0,0,.35)}
 .modal-content input,.modal-content textarea{width:100%;padding:11px 12px;border-radius:14px;background:rgba(255,255,255,.05);border:1px solid rgba(41,199,112,.25);color:#fff;margin-bottom:14px}.modal-content textarea{height:80px;resize:none}
 .close{position:absolute;right:18px;top:10px;font-size:26px;cursor:pointer}
 #toastContainer{position:fixed;top:90px;right:25px;display:flex;flex-direction:column;gap:10px;z-index:99999}
@@ -154,50 +141,31 @@ body .header{opacity:1!important;transform:translate(-50%,0)!important}
 .tour-img img{width:100%;height:100%;object-fit:cover;filter:brightness(.85);transition:.35s}.tour-card:hover img{filter:brightness(1)}
 .tour-tag{position:absolute;top:12px;left:12px;padding:6px 12px;font-size:.75rem;border-radius:14px;background:rgba(41,199,112,.35);color:#e7f2ec;font-weight:600;backdrop-filter:blur(8px)}
 .tour-info{padding:16px 18px 20px;display:flex;flex-direction:column;gap:8px}
-.tour-info h3{margin:0;font-family:"Inika",serif;font-weight:700;font-size:1.2rem;color:#29c770}
+.tour-info h3{margin:0;font-family:"Prata",serif;font-weight:700;font-size:1.2rem;color:#29c770}
 .tour-short{margin:0;color:rgba(231,242,236,.85);font-size:.8rem;line-height:1.5}
 .tour-rating{display:flex;align-items:center;gap:6px}.tour-rating .stars{font-size:.78rem;letter-spacing:1px;color:rgba(41,199,112,.9);text-shadow:0 0 8px rgba(41,199,112,.35)}
 .rating-number{font-size:.65rem;color:rgba(231,242,236,.5)}
 .price-box{display:flex;flex-direction:column}.old-price{margin-bottom: .2rem; font-size:.65rem;color:rgba(231,242,236,.5);text-decoration:line-through}.tour-price{font-size:.75rem;font-weight:700;color:#e7f2ec}
 .tour-bottom{margin-top:14px;display:flex;justify-content:space-between;align-items:center}
 .book-btn.small{padding:8px 18px;font-size:.8rem;border-radius:24px;border:2px solid rgba(41,199,112,.5);background:rgba(11,15,13,.6);color:#e7f2ec;transition:.25s}.book-btn.small:hover{color:#29c770;border-color:#29c770;transform:translateY(-2px)}
-
+.tours-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;align-items:stretch}.tour-card{display:flex;flex-direction:column;height:100%}.tour-info{display:flex;flex-direction:column;flex-grow:1}.tour-bottom{margin-top:auto}.tour-short{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
 /* ========================= PROMO SECTION ========================= */
 .promo-wrapper{max-width:1400px;margin:60px auto}
 .promo-card{border-radius:22px}
 .promo-img{height:320px}
-.promo-tag{font-size:.75rem;font-family:"Montserrat",sans-serif;font-weight:600;padding:7px 16px}
+.promo-tag{font-size:.75rem;font-family:"Nunito Sans",sans-serif;font-weight:600;padding:7px 16px}
 .marquee{overflow:hidden;width:100%;height:22px;background:rgba(41,199,112,.15);backdrop-filter:blur(6px);border-top:1px solid rgba(41,199,112,.22);border-bottom:1px solid rgba(41,199,112,.22);position:relative;white-space:nowrap}
 .marquee-track{display:inline-flex;white-space:nowrap;will-change:transform;animation:scroll 22s linear infinite}
 .marquee-item{font-family:"Comfortaa",sans-serif;font-size:.78rem;font-weight:700;color:#29c770;padding-right:2rem;text-transform:uppercase;letter-spacing:2px;text-shadow:0 0 6px rgba(41,199,112,.35)}
 @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
 .promo-info{display:flex;justify-content:space-between;align-items:flex-start;padding:22px;gap:40px}
-.promo-left h3{margin:6px 0 10px;font-family:"Inika",serif;font-size:2rem;font-weight:700;color:#29c770}
-.promo-desc{color:rgba(231,242,236,.85);font-family:"Montserrat",sans-serif;font-size:1.2rem;font-weight:400;line-height:1.55;max-width:900px}
+.promo-left h3{margin:6px 0 10px;font-family:"Prata",serif;font-size:2rem;font-weight:700;color:#29c770}
+.promo-desc{color:rgba(231,242,236,.85);font-family:"Nunito Sans",sans-serif;font-size:1.2rem;font-weight:400;line-height:1.55;max-width:900px}
 .promo-right{display:flex;flex-direction:column;align-items:flex-end;justify-content:space-between;min-height:180px}
-.promo-price-box{text-align:right}.promo-price-box .tour-price{font-family:"Montserrat",sans-serif;font-size:1.3rem;font-weight:700;color:#e7f2ec}.promo-price-box .old-price{font-family:"Montserrat",sans-serif;font-size:.9rem;font-weight:400;color:rgba(231,242,236,.5);text-decoration:line-through}
-.promo-book-btn{margin-top:auto;font-family:"Montserrat",sans-serif;font-size:.8rem;font-weight:600}
+.promo-price-box{text-align:right}.promo-price-box .tour-price{font-family:"Nunito Sans",sans-serif;font-size:1.3rem;font-weight:700;color:#e7f2ec}.promo-price-box .old-price{font-family:"Nunito Sans",sans-serif;font-size:.9rem;font-weight:400;color:rgba(231,242,236,.5);text-decoration:line-through}
+.promo-book-btn{margin-top:auto;font-family:"Nunito Sans",sans-serif;font-size:.8rem;font-weight:600}
 .promo-card:hover{transform:none!important;border-color:rgba(41,199,112,.18)!important;background:rgba(11,15,13,.75)!important}.promo-card:hover .promo-img img{transform:scale(1.08);filter:brightness(1)}
 .promo-img img{transition:transform .45s ease,filter .35s ease}
-.price-disclaimer {
-    margin: 60px auto 40px;
-    padding: 18px 24px;
-    max-width: 800px;
-    text-align: center;
-    font-size: .9rem;
-    line-height: 1.55;
-    color: #29c770;
-    background: rgba(11,15,13,.55);
-    border: 1px solid rgba(41,199,112,.25);
-    border-radius: 20px;
-    backdrop-filter: blur(6px);
-    opacity: .9;
-}
-.price-disclaimer span {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Inika', sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
+.price-disclaimer {margin: 60px auto 40px;padding: 18px 24px;max-width: 800px;text-align: center;font-size: .9rem;line-height: 1.55; color: #29c770; background: rgba(11,15,13,.55); border: 1px solid rgba(41,199,112,.25);border-radius: 20px;backdrop-filter: blur(6px);opacity: .9;}
+.price-disclaimer span {display: flex;flex-direction: column;font-family: 'Prata', sans-serif;font-weight: 400;font-style: italic;}

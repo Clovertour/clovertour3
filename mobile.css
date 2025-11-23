@@ -12,10 +12,10 @@
 .webback{width:auto;height:100svh;background-position:center top}
 .page1{text-align:center}
 .page1-text{align-items:center;padding:20px}
-.text1{font-size:clamp(2rem,10vw,3rem);text-shadow:none;filter:none}
-.text2{-webkit-text-stroke:1px rgba(255,255,255,.8);font-size:clamp(2rem,11vw,4rem);letter-spacing:2px}
-.text3{font-size:.95rem;max-width:90%}
-.button1{margin-top:1.2rem}
+.text1{font-size: 1.4rem; line-height: 1.6rem!important; max-width:100%;text-align:center;word-break:break-word;line-height:1;}
+.text2{-webkit-text-stroke:1px rgba(255,255,255,.8);font-size:3.2rem;letter-spacing:2px}
+.text3{font-size:.9rem;max-width:70%; line-height: .9rem;}
+.button1{margin-top:2.5rem}
 .button1 button{padding:10px 28px;font-size:.95rem}
 .button1 button:hover{border-color:rgba(41,199,112,.5)!important;color:#e7f2ec!important;transform:none!important}
 }
@@ -48,7 +48,7 @@
 /*============ WHY SECTION ============*/
 .why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
 .why-card{background:rgba(11,15,13,.45);border:2px solid rgba(41,199,112,.12);border-radius:16px;padding:20px 18px;backdrop-filter:blur(6px);box-shadow:0 0 10px rgba(0,0,0,.2)}
-.why-card h3{font:600 1.1rem "Montserrat";color:#29c770;margin-bottom:8px}
+.why-card h3{font:600 1.1rem "Nunito Sans";color:#29c770;margin-bottom:8px}
 .why-card p{color:#cdd8d3;font-size:.85rem;line-height:1.45}
 
 /*============ CONTACTS ============*/

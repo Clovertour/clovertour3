@@ -168,7 +168,7 @@ const i18n = {
     /* PROMO (added) */
     promo_special_offer: "SPECIAL OFFER OF THE MONTH",
     promo_special_tag: "Special offer — 3 nights",
-    promo_marquee: "- Special offer — Killarney — Limited Offer — ",
+    promo_marquee: "— Special offer — Killarney — Limited Offer — ",
     promo_killarney_desc:"Killarney County Kerry. At the beginning of our journey you will hear the secrets and legends of the Shannon River Bay.We will visit an incredible and mysterious place – Ross Castle... The journey will be “seasoned” with real ancient Irish legends.",
     old_price: "Regular Price",
     new_price1: "🌿 Price Upon Request",
@@ -276,7 +276,7 @@ const i18n = {
     tour_cork_full_title: "Cork and Titanic experience",
     tour_cork_full_desc: "Откройте для себя тур Cork and Titanic Heritage. Погрузитесь в историю Корка во время увлекательной прогулки по городу, его улочкам и крепости Elizabeth Fort, узнавая о происхождении этого места. Почувствуйте атмосферу легендарного рынка English Market — рая для гурманов. Затем отправьтесь в живописный городок Коуб, где находится знаменитый музей Титаника, завершающий историю великого лайнера. Посетите самый высокий собор Ирландии с видом на гавань и по дороге насладитесь колоритом городка Д. Кеннеди с его прибрежной красотой и местным характером.",
 
-    tour_connemara_title: "Connemara & Kylemore Abbey",
+    tour_connemara_title: "Коннемара и Кайлмор",
     tour_connemara_full_desc: "Тур Connemara National Park & Kylemore Abbey. Окунитесь в дикую красоту национального парка Коннемара, где горы, озёра и торфяники создают одни из самых впечатляющих пейзажей Ирландии. Насладитесь прогулками по тропам и панорамными видами Атлантики. Затем отправьтесь в сказочное аббатство Кайломор — замок XIX века на берегу спокойного озера. Узнайте его романтичную историю, прогуляйтесь по викторианскому саду и ощутите умиротворённую атмосферу этого места. Это путешествие объединяет природу и культуру, даря незабываемые впечатления.",
 
     tour_dingle_full_title: "Dingle peninsula",
@@ -285,11 +285,11 @@ const i18n = {
     /* PROMO */
     promo_special_offer: "СПЕЦПРЕДЛОЖЕНИЕ МЕСЯЦА",
     promo_special_tag: "Спецпредложение — 3 ночи",
-    promo_marquee: "- Специальное предложение — Килларни — Ограниченное предложение — ",
+    promo_marquee: "— Специальное предложение — Килларни — Ограниченное предложение — ",
     promo_killarney_desc:"Килларни, графство Керри. В начале нашего путешествия вы услышите легенды и истории залива реки Шаннон. Мы посетим удивительное и загадочное место — замок Росс... Путешествие будет приправлено настоящими древними ирландскими легендами.",
     old_price: "Стандартная цена",
-    new_price1: "🌿 Стоимость по запросу",
-    new_price2: "🔍 Индивидуальное предложение",
+    new_price1: "🌿 По запросу",
+    new_price2: "🔍 Индивидуально",
     new_price3: "✨ Персональный опыт",
     new_price4: "🧭 Эксклюзивный тур",
 
@@ -430,7 +430,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
+//MESSAGE
 function showToast(message, type = "success") {
   const container = document.getElementById("toastContainer");
   if (!container) return;
@@ -447,18 +447,56 @@ function showToast(message, type = "success") {
   setTimeout(() => toast.remove(), 5000);
 }
 
+/***********************************************************
+ * MARQUEE — FIXED LANGUAGE SWITCH VERSION
+ ***********************************************************/
 const track = document.getElementById("marqueeTrack");
-const item = track.querySelector(".marquee-item");
+const originalItem = track?.querySelector(".marquee-item");
 
-// клонируем текст, пока ширина не станет минимум в 2.5 раза больше окна
-function fillMarquee() {
-  let totalWidth = track.scrollWidth;
+// Функция создаёт нужное количество клонов
+function fillMarqueeBase() {
+    if (!track || !originalItem) return;
+    let totalWidth = track.scrollWidth;
 
-  while (totalWidth < window.innerWidth * 2.5) {
-    const clone = item.cloneNode(true);
-    track.appendChild(clone);
-    totalWidth += clone.scrollWidth;
-  }
+    while (totalWidth < window.innerWidth * 2.5) {
+        const clone = originalItem.cloneNode(true);
+        track.appendChild(clone);
+        totalWidth += clone.scrollWidth;
+    }
 }
 
-fillMarquee();
+// Первоначальное заполнение (на загрузке)
+fillMarqueeBase();
+
+// Полная перестройка при смене языка
+function rebuildMarquee() {
+    if (!track) return;
+
+    const currentLang = localStorage.getItem("lang") || "en";
+    const text = i18n[currentLang].promo_marquee;
+
+    track.innerHTML = ""; // очищаем
+
+    // создаём новую оригинальную ноду
+    const newItem = document.createElement("span");
+    newItem.className = "marquee-item";
+    newItem.setAttribute("data-i18n", "promo_marquee");
+    newItem.textContent = text;
+
+    track.appendChild(newItem);
+
+    // клонируем заново
+    let totalWidth = track.scrollWidth;
+    while (totalWidth < window.innerWidth * 2.5) {
+        const clone = newItem.cloneNode(true);
+        track.appendChild(clone);
+        totalWidth += clone.scrollWidth;
+    }
+}
+
+// слушатель на смену языка
+if (langSwitch) {
+    langSwitch.addEventListener("click", () => {
+        setTimeout(() => rebuildMarquee(), 50);
+    });
+}
